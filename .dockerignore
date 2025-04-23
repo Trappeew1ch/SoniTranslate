@@ -1,0 +1,41 @@
+# Git files
+.git/
+.gitignore
+.gitattributes
+
+# Docker files
+Dockerfile
+.dockerignore
+
+# Python cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment folders
+.venv/
+venv/
+env/
+*.env
+
+# IDE/Editor specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Notebooks (usually not needed for runtime)
+*.ipynb
+
+# Local data/output directories (these are created empty in Dockerfile)
+downloads/
+logs/
+outputs/
+clean_song_output/
+audio/
+audio2/
+
+# OS specific files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,82 @@
+# Base + Extra + XTTS (Combined & Deduplicated for Docker)
+
+# --- PyTorch (GPU Version) ---
+--extra-index-url https://download.pytorch.org/whl/cu118
+torch>=2.1.0+cu118
+torchvision>=0.16.0+cu118
+torchaudio>=2.1.0+cu118
+
+# --- Core Dependencies ---
+ctranslate2<=4.4.0
+yt-dlp
+gradio==4.19.2
+pydub==0.25.1
+edge_tts==6.1.7
+deep_translator==1.11.4
+nest_asyncio
+gTTS
+gradio_client==0.10.1
+IPython
+fastapi==0.112.2
+praat-parselmouth>=0.4.3
+pyworld==0.3.2
+faiss-cpu==1.7.3
+torchcrepe==0.0.20
+ffmpeg-python>=0.2.0
+gdown
+rarfile
+transformers
+accelerate
+optimum
+sentencepiece
+srt
+openai==1.14.3
+tiktoken==0.6.0
+pypdf==4.2.0
+python-docx
+
+# --- XTTS Core Dependencies ---
+numpy==1.23.5
+cython>=0.29.30
+scipy>=1.11.2
+soundfile
+librosa
+scikit-learn
+numba
+inflect>=5.6.0
+tqdm>=4.64.1
+anyascii>=0.3.0
+pyyaml>=6.0
+fsspec>=2023.6.0
+aiohttp>=3.8.1
+packaging>=23.1
+flask>=2.0.1
+pysbd>=0.3.4
+umap-learn>=0.5.1
+pandas
+matplotlib
+trainer>=0.0.32
+coqpit>=0.0.16
+jieba
+pypinyin
+hangul_romanize
+gruut[de,es,fr]==2.2.3
+jamo
+nltk
+g2pkk>=0.1.1
+bangla
+bnnumerizer
+bnunicodenormalizer
+einops>=0.6.0
+encodec>=0.1.1
+unidecode>=1.3.2
+num2words
+spacy[ja]>=3
+
+# --- Git Dependencies (Install these together) ---
+git+https://github.com/R3gm/pyannote-audio.git@3.1.1
+git+https://github.com/R3gm/whisperX.git@cuda_11_8
+git+https://github.com/facebookresearch/fairseq.git@refs/pull/5359/merge
+git+https://github.com/R3gm/openvoice_package.git@lite
+
+# Note: TTS==0.21.1 --no-deps needs to be installed separately after these.
